@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu segundo jogo</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body onresize="tamanhoDaTela()">
+
+    <div class="placar">
+
+        <div class="vida">
+        <img id="coracao1" src="img/coracao_cheio.png">
+        <img id="coracao2" src="img/coracao_cheio.png">
+        <img id="coracao3" src="img/coracao_cheio.png">
+    </div>
+
+        <div class="cronometro">Tempo de jogo: <span id="numeroNaTela"></span></div>
+        
+    </div>
+
+    <script>
+        
+        setInterval(function(){
+        posicaoAleatoria()
+        }, 2000)
+
+        setInterval(function(){
+        tempoDiminui()
+        }, 1000);
+
+    </script>
+</body>
+</html>
